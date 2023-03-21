@@ -38,7 +38,7 @@ const Temp = () => {
 
   useEffect(() => {
     getWeatherInfo();
-  })
+  }, []);
 
   return (
     <>
@@ -57,7 +57,8 @@ const Temp = () => {
           <button
             className="searchButton"
             type="button"
-            onClick={getWeatherInfo}>
+            onClick={getWeatherInfo}
+          >
             Search
           </button>
         </div>
@@ -70,4 +71,3 @@ const Temp = () => {
 };
 
 export default Temp;
-
